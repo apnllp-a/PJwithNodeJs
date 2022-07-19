@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="stylesheets/css/IT/table_list-set_permission.css">
+    <title>table</title>
+</head>
+
+<body>
+    <table id="myTable" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>รายชื่อ</th>
+                <th>แผนก</th>
+                <th>ระดับพนักงาน</th>
+                <th>กำหนดสิทธิ์</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <?php for ($i = 1; $i < 100; $i++) { ?>
+            <tr>
+                <td>
+                    <?php echo $i ?>
+                </td>
+                <td>กันตพัฒน์</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>
+                    <form action="#">
+
+                        <select name="cars" id="cars">
+                            <option value="choose">เลือก</option>
+                             <option value="volvo">Volvo</option>
+                             <option value="saab">Saab</option>
+                             <option value="opel">Opel</option>
+                             <option value="audi">Audi</option>
+                        </select>
+
+                        <input type="submit" value="ยืนยัน">
+                    </form>
+                </td>
+
+            </tr>
+            <?php  } ?>
+        </tbody>
+
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+</body>
+
+</html>

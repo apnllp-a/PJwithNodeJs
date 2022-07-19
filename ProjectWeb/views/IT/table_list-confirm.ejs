@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="stylesheets/css/IT/table_list-confirm.css">
+    <title>table</title>
+</head>
+
+<body>
+    <table id="myTable" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>รายชื่อ</th>
+                <th>email</th>
+                <th>Username</th>
+                <th>วันที่</th>
+                <th>ยืนยัน</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <?php for ($i = 1; $i < 100; $i++) { ?>
+            <tr>
+                <td>
+                    <?php echo $i ?>
+                </td>
+                <td>กันตพัฒน์</td>
+                <td>Edinburgh</td>
+                <td>Ufufuyfuyfuy</td>
+                <td>20/06/2541</td>
+                <td>
+                    <form action="#">
+                        <input class="accept" type="submit" value="ยืนยัน">
+                        <input class="cancel" type="submit" value="ยกเลิก">
+                    </form>
+                </td>
+
+            </tr>
+            <?php  } ?>
+        </tbody>
+
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+</body>
+
+</html>

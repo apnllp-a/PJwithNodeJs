@@ -1,0 +1,21 @@
+thead {
+    background-color: #31a693;
+    color: #fff;
+}
+
+input {
+    margin: 15px auto;
+}
+
+tbody tr.odd:hover,
+tr.even:hover {
+    background-color: #b8ebe1;
+}
+
+table {
+    text-align: center;
+}
+
+table thead tr th.sorting {
+    text-align: center;
+}

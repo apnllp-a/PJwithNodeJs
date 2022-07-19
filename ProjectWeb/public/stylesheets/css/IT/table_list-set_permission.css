@@ -1,0 +1,47 @@
+thead {
+    background-color: #59235e;
+    color: #fff;
+}
+
+input {
+    margin: 15px auto;
+}
+
+tbody tr.odd:hover,
+tr.even:hover {
+    background-color: #f3dff5;
+}
+
+table {
+    text-align: center;
+}
+
+table thead tr th.sorting {
+    text-align: center;
+}
+
+form {
+    width: inherit;
+    height: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+form select#cars {
+    text-align: center;
+    width: 50%;
+    padding: 0.5rem 1rem;
+    border: 2px solid #59235e;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+form input {
+    border-left: none;
+    border: 2px solid #59235e;
+    background-color: #fff;
+    font-size: 16px;
+    width: 50%;
+    padding: 0.5rem 1rem;
+}
