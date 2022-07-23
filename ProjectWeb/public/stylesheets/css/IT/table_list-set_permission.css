@@ -4,7 +4,7 @@ thead {
 }
 
 input {
-    margin: 15px auto;
+    margin: 0px auto;
 }
 
 tbody tr.odd:hover,
@@ -21,27 +21,22 @@ table thead tr th.sorting {
 }
 
 form {
-    width: inherit;
     height: 45px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }
 
 form select#cars {
-    text-align: center;
-    width: 50%;
+    width: 25%;
     padding: 0.5rem 1rem;
-    border: 2px solid #59235e;
+    border: 1px solid #59235e;
     background-color: #fff;
     font-size: 16px;
 }
 
 form input {
     border-left: none;
-    border: 2px solid #59235e;
+    border: 1px solid #59235e;
     background-color: #fff;
     font-size: 16px;
-    width: 50%;
+    width: 25%;
     padding: 0.5rem 1rem;
 }

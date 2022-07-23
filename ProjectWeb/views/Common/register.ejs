@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form action="#">
+    <form action="/register/add" method="POST">
         <div class="head">
             <span class="line"></span>
             <p>Schedule</p>
@@ -21,30 +21,30 @@
             <p>Register</p>
         </div>
         <div class="input_field">
-            <input type="text" class="form_input" placeholder=" ">
+            <input type="text" class="form_input" name="username" placeholder=" ">
             <label for="#" class="form_label">Username</label>
         </div>
         <div class="input_field">
-            <input type="password" class="form_input" placeholder=" ">
+            <input type="password" class="form_input" name="password" placeholder=" ">
             <label for="#" class="form_label">Password</label>
         </div>
         <div class="input_field">
-            <input type="password" class="form_input" placeholder=" ">
-            <label for="#" class="form_label">Confirm-Password</label>
+            <input type="password" class="form_input" name="confirm_password" placeholder=" ">
+            <label for="# " class="form_label ">Confirm-Password</label>
         </div>
 
-        <div class="input_field">
-            <input type="text" class="form_input" placeholder=" ">
-            <label for="#" class="form_label">ชื่อ-นามสกุล</label>
+        <div class="input_field ">
+            <input type="text " class="form_input " name="name" placeholder=" ">
+            <label for="# " class="form_label ">ชื่อ-นามสกุล</label>
         </div>
-        <div class="input_field">
-            <input type="text" class="form_input" placeholder=" ">
-            <label for="#" class="form_label">Department</label>
+        <div class="input_field ">
+            <input type="text " class="form_input " name="department" placeholder=" ">
+            <label for="# " class="form_label ">Department</label>
         </div>
 
 
-        <button class="btn">Sing up</button>
-        <a href="/login" class="btn_a">Login</a>
+        <button class="btn " type="submit" name="" id="">Sing up</button>
+        <a href="/login " class="btn_a ">Login</a>
 
     </form>
 </body>

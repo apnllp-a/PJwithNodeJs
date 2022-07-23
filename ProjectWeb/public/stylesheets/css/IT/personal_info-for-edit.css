@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: "Kanit", sans-serif;
+}
+
+.head {
+    padding: 25px;
+    font-size: 24px;
+}
+
+.container {
+    /* border: 1px solid red; */
+    max-width: 100%;
+    height: inherit;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    grid-gap: 20px;
+    padding: 10px 120px;
+}
+
+.form_label {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.form_input {
+    margin: 0 auto;
+    width: 85%;
+    height: 35%;
+    padding: 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: #F4F3FA;
+    z-index: 0;
+}
+
+form {
+    position: relative;
+}
+
+form input:focus {
+    border: 1px solid #39BBB3;
+    outline: none;
+}
+
+.btns {
+    left: 600px;
+    position: absolute;
+    border: 1px solid rgb(27, 170, 14);
+    color: rgb(27, 170, 14);
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+.btns:hover {
+    border: 1px solid rgb(27, 170, 14);
+    color: rgb(255, 255, 255);
+    background-color: rgb(27, 170, 14);
+    transform: scale(1.1, 1.1);
+    transition: .5s;
+}
+
+.btnc {
+    left: 750px;
+    position: absolute;
+    border: 1px solid rgb(199, 26, 26);
+    color: rgb(199, 26, 26);
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+.btnc:hover {
+    border: 1px solid rgb(199, 26, 26);
+    color: rgb(255, 255, 255);
+    background-color: rgb(199, 26, 26);
+    transform: scale(1.1, 1.1);
+    transition: .5s;
+}

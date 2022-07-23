@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 .logo {
@@ -31,13 +31,14 @@ body {
 .topnav {
     position: fixed;
     width: 100%;
-    background-color: #31A69F;
+    background-color: #31a69f;
     padding: 20px 10px;
-    border-bottom: 1px solid #31A69F;
-    color: #F5F5F5;
+    border-bottom: 1px solid #31a69f;
+    color: #f5f5f5;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 
@@ -68,9 +69,9 @@ button {
     margin-top: 5px;
     padding: 15px 20px;
     margin-top: 0px;
-    background-color: #31A69F;
+    background-color: #31a69f;
     border-radius: 10px;
-    border: solid 1px #31A69F;
+    border: solid 1px #31a69f;
 }
 
 .containerdrop ul li {
@@ -97,7 +98,7 @@ button {
     z-index: 5;
     top: 65.5px;
     left: 0;
-    background: #F5F5F5;
+    background: #f5f5f5;
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -110,6 +111,6 @@ button {
 }
 
 .sidenav a:hover {
-    background-color: #39BBB3;
+    background-color: #39bbb3;
     color: #fff;
 }

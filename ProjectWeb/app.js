@@ -4,14 +4,18 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/login');
 var registerRouter = require('./routes/register');
+
+
+//IT
 var personalInfoRouter = require('./routes/IT/personal_info');
-var listNameRouter = require('./routes/list_name');
+var listNameRouter = require('./routes/IT/list_name');
 var confirmRegisterRouter = require('./routes/IT/confirm_regis');
 var setPermissionRouter = require('./routes/IT/set_permission');
+var personalEditRouter = require('./routes/IT/personal_edit');
+var personalInfoForEditRouter = require('./routes/IT/personal_info-for-edit');
+var personalNameEditRouter = require('./routes/IT/personal_name-edit');
 
 var app = express();
 
@@ -26,13 +30,15 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', loginRouter);
-app.use('/users', usersRouter);
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
 app.use('/list_name', listNameRouter);
 app.use('/confirm_regis', confirmRegisterRouter);
 app.use('/set_permission', setPermissionRouter);
 app.use('/personal_info', personalInfoRouter);
+app.use('/personal_edit', personalEditRouter);
+app.use('/personal_info-for-edit', personalInfoForEditRouter);
+app.use('/personal_name-edit', personalNameEditRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

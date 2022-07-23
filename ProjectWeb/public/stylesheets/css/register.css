@@ -85,6 +85,7 @@ form {
     font-weight: 500;
     letter-spacing: .4;
     transition: .5s;
+    text-align: center;
 }
 
 .input_field .form_label {

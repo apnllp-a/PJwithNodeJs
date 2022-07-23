@@ -1,0 +1,29 @@
+thead {
+    background-color: #FFC1C1;
+    color: #000000;
+}
+
+input {
+    margin: 15px auto;
+}
+
+tbody tr.odd:hover,
+tr.even:hover {
+    background-color: #f8e7e7;
+}
+
+table {
+    text-align: center;
+}
+
+table thead tr th.sorting {
+    text-align: center;
+}
+
+.btn-edit {
+    background-color: #FFC1C1;
+    color: #000;
+    padding: 0.5rem 0.75rem;
+    width: 5rem;
+    border-radius: 25px;
+}

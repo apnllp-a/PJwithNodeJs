@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="stylesheets/css/IT/table.css">
+    <link rel="stylesheet" href="stylesheets/css/IT/table_edit.css">
     <title>table</title>
 </head>
 
@@ -20,7 +20,7 @@
                 <th>email</th>
                 <th>Username</th>
                 <th>แผนก</th>
-                <th>ติอต่อ</th>
+                <th>แก้ไข</th>
             </tr>
         </thead>
         <tbody>
@@ -41,7 +41,7 @@
                     <td>
                         <%= regisdb.department%>
                     </td>
-                    <td>0958988991</td>
+                    <td><button onclick="popupInfo()" class="btn-edit">แก้ไข</button></td>
                 </tr>
                 <% }) %>
         </tbody>
@@ -53,6 +53,13 @@
         $(document).ready(function() {
             $('#myTable').DataTable();
         });
+
+
+        function popupInfo(params) {
+
+            window.open('/personal_info-for-edit', "bfs", "fullscreen,scrollbars")
+
+        }
     </script>
 </body>
 
