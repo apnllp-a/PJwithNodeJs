@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="stylesheets/css/HEADER/table_documents-confirm.css">
+    <title>ยืนยันเอกสาร</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <%- include('navheader') %>
+    </div>
+
+    <div class="container">
+
+        <header>
+            <h3>ยืนยันเอกสาร</h3>
+            <span class="h33">
+                <h4 class="cancel"> เอกสารที่ถูกยกเลิก</h4>
+            <h4 class="accep">เอกสารที่อนุมัติแล้ว</h4>
+            </span>
+        </header>
+        <section>
+            <table id="myTable" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>รายชื่อเอกสาร</th>
+                        <th>แผนก</th>
+                        <th>ชื่อผู้ส่ง</th>
+                        <th>วันที่</th>
+                        <th>Confirm</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1</td>
+                        <td>ยืนยันตารางเวร</td>
+                        <td>PCR</td>
+                        <td>เมเจอร์ รัชโย</td>
+                        <td>24/07/2022</td>
+                        <td>
+                            <button disabled="disabled" class="see">ยืนยัน</button>
+                            <button disabled="disabled" class="see">ยกเลิก</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+.navbar {
+    position: fixed;
+}
+
+.container {
+    max-width: 75%;
+    max-height: 100vh;
+    margin-left: 420px;
+    padding-top: 150px;
+}
+
+header {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+header>h3 {
+    background-color: #59235e;
+    padding: 25px;
+    font-size: 24px;
+    color: #fff;
+}
+
+header>.h33>.accep {
+    background-color: green;
+    display: block;
+    padding: 25px;
+    font-size: 20px;
+    margin: 0 5px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+header>.h33>.cancel {
+    background-color: red;
+    display: block;
+    padding: 25px;
+    font-size: 20px;
+    margin: 0 5px;
+    color: #fff;
+}
+
+thead {
+    background-color: #59235e;
+    color: #fff;
+}
+
+input {
+    margin: 0px auto;
+}
+
+tbody tr.odd:hover,
+tr.even:hover {
+    background-color: #f3dff5;
+}
+
+table {
+    text-align: center;
+}
+
+table thead tr th.sorting {
+    text-align: center;
+}
+
+form {
+    height: 45px;
+}
+
+form select#cars {
+    width: 25%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #59235e;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+form input {
+    border-left: none;
+    border: 1px solid #59235e;
+    background-color: #fff;
+    font-size: 16px;
+    width: 25%;
+    padding: 0.5rem 1rem;
+}
+
+.see {
+    color: #000;
+}

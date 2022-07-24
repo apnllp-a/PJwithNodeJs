@@ -4,9 +4,19 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+
+//COMMON
 var loginRouter = require('./routes/login');
 var registerRouter = require('./routes/register');
 
+//HEADER
+var personalInfoHeaderRouter = require('./routes/HEADER/personal_info');
+var tableDocumentsRouter = require('./routes/HEADER/table_documents');
+var tableDocumentsConfirmRouter = require('./routes/HEADER/table_documents-confirm');
+var tableListNameHeaderRouter = require('./routes/HEADER/table_listname-header');
+
+//BOARD
+var personalIfoBoardRouter = require('./routes/BOARD/personal_info');
 
 //IT
 var personalInfoRouter = require('./routes/IT/personal_info');
@@ -29,9 +39,21 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//COMMON
 app.use('/', loginRouter);
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
+
+//HEADER
+app.use('/personal_info-header', personalInfoHeaderRouter);
+app.use('/table_documents', tableDocumentsRouter);
+app.use('/table_documents-confirm', tableDocumentsConfirmRouter);
+app.use('/table_listname-header', tableListNameHeaderRouter);
+
+//BOARD 
+app.use('/personal_info-board', personalIfoBoardRouter);
+
+//IT
 app.use('/list_name', listNameRouter);
 app.use('/confirm_regis', confirmRegisterRouter);
 app.use('/set_permission', setPermissionRouter);

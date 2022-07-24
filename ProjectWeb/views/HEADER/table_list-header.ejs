@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="stylesheets/css/HEADER/table-header.css">
+    <title>table</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <%- include('navheader')%>
+    </div>>
+
+    <div class="container">
+        <header>
+            <h2>รายชื่อพนักงาน</h2>
+        </header>
+        <section>
+            <!-- <%= regisdb %> -->
+            <table id="myTable" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>รายชื่อ</th>
+                        <th>email</th>
+                        <th>Username</th>
+                        <th>แผนก</th>
+                        <th>ติดต่อ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% Object.values(regisdb).forEach(function(regisdb){ %>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                <%= regisdb.name %>
+                            </td>
+                            <td>
+                                <%= regisdb.username %>
+                            </td>
+                            <td>
+                                <%= regisdb.username %>
+                            </td>
+                            <td>
+                                <%= regisdb.department%>
+                            </td>
+                            <td>0958988991</td>
+                        </tr>
+                        <% }) %>
+                </tbody>
+            </table>
+
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+</body>
+
+</html>
