@@ -114,3 +114,7 @@ button {
     background-color: #A6313F;
     color: #fff;
 }
+
+.hidee {
+    display: none;
+}

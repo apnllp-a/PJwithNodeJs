@@ -14,6 +14,7 @@ var personalInfoHeaderRouter = require('./routes/HEADER/personal_info');
 var tableDocumentsRouter = require('./routes/HEADER/table_documents');
 var tableDocumentsConfirmRouter = require('./routes/HEADER/table_documents-confirm');
 var tableListNameHeaderRouter = require('./routes/HEADER/table_listname-header');
+var settingDaysTableRouter = require('./routes/HEADER/setting_days-table');
 
 //BOARD
 var personalIfoBoardRouter = require('./routes/BOARD/personal_info');
@@ -49,6 +50,7 @@ app.use('/personal_info-header', personalInfoHeaderRouter);
 app.use('/table_documents', tableDocumentsRouter);
 app.use('/table_documents-confirm', tableDocumentsConfirmRouter);
 app.use('/table_listname-header', tableListNameHeaderRouter);
+app.use('/setting_days-table', settingDaysTableRouter);
 
 //BOARD 
 app.use('/personal_info-board', personalIfoBoardRouter);

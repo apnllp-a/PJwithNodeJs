@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/css/HEADER/setting_days-table.css">
+    <title>กำหนดตารางเวร</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <%- include('navheader')%>
+    </div>
+    <div class="container">
+        <header>
+            <h2>กำหนดตารางเวร</h2>
+        </header>
+
+        <section>
+            <div class="respon">
+                <table>
+                    <form method="post" action="#"></form>
+                    <thead>
+                        <th>Date</th>
+                        <% for(let count = 0; count <= 30; count++ ){ %>
+                            <th>
+                                <%-count%>
+                            </th>
+                            <% } %>
+                                <th>Date</th>
+                    </thead>
+                    <tbody>
+
+                        <span class="den-css">
+                        <tr>
+                            <td></td>
+                            <td>Day</td>
+                            <% for(let count = 0; count <= 29; count++ ){ %>
+                                <td><input type="text" name="<%-count %>" value="2" size="2" maxlength="2"></td>
+                                <% } %>
+
+                                    <td></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>Eve</td>
+                            <% for(let count = 30; count <= 59; count++ ){ %>
+                                <td><input type="text" name="<%-count %>" value="2" size="2" maxlength="2"></td>
+                                <% } %>
+                                    <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Night</td>
+                            <% for(let count = 59; count <= 88; count++ ){ %>
+                                <td><input type="text" name="<%-count %>" value="2" size="2" maxlength="2"></td>
+                                <% } %>
+                        </tr>
+                    </span>
+
+
+                        <% for(let count = 1; count <= 12; count++ ){ %>
+                            <tr class="bodydays">
+                                <td>
+                                    <%-count %>
+                                </td>
+
+                                <td>
+                                    <select name="1000"><option value="x">off</option>			
+			<option value="u">yes</option>
+			</select></td>
+                                <td><select name="1001"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1002"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1003"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1004"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1005"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1006"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1007"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1008"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1009"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1010"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1011"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1012"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1013"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1014"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1015"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1016"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1017"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1018"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1019"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1020"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1021"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1022"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1023"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1024"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1025"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1026"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1027"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1028"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1029"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td><select name="1030"><option value="yyy">ok</option>	
+			<option value="xxx">off</option>
+			<option value="uxx">D</option>
+			<option value="xux">E</option>
+			<option value="xxu">N</option>
+			<option value="uux">DE</option>
+			<option value="xuu">EN</option>
+			<option value="uxu">DN</option>
+			<option value="uuu">DEN</option>
+			</select></td>
+                                <td>
+                                    <%-count %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tbody>
+                    <tfoot>
+                        <th>Date</th>
+                        <% for(let count = 0; count <= 30; count++ ){ %>
+                            <th>
+                                <%-count%>
+                            </th>
+                            <% } %>
+                                <th>Date</th>
+                    </tfoot>
+
+                </table>
+            </div>
+            <div class="infotable">
+                <div class="selectinfo">
+                    <h3>***หมายเหตุ***</h3>
+                    <p> - ปุ่มเลือกที่เป็น ok กดเลือกเปลี่ยนได้ ว่าวันนั้นต้องการอยู่เวรอะไร</p>
+                    <p> - ok คือวันนั้นว่างอยู่เวรได้ </p>
+                    <p> - off คือ วันนั้นขอหยุด</p>
+                    <p> - ชื่อเวรต่างๆ กรณีต้องการเลือกเวรในวันนั้นเลย</p>
+                    <p> - ซ้ายสุด วันที่ 0 คือ วันสุดท้ายของเวรล็อตก่อน ขอข้อมูลว่าอยู่เวรดึกหรือไม่จะได้ไม่จัดเวรต่อให้</p>
+                </div>
+                <div class="setting-table">
+                    <h3>ปรับแต่งค่า</h3>
+                    <form method="post" action="#">
+
+                        <p> ใส่วันที่ ที่ต้องการจัดเวร : วันแรก <input type="number" name="DateStart" value="1" size="2" maxlength="2" min="1" max="34"> : วันสุดท้าย <input type="number" name="DateEnd" value="30" size="2" maxlength="2" min="2" max="35"> --
+                            ใส่จำนวนพยาบาล หรือ บุคลากร <input type="number" name="TotalNurse" value="12" size="2" maxlength="2" min="5" max="50"></p>
+
+                        <p> ใส่วันที่ วันที่เป็นวันหยุด :
+                            <% for(let count = 1; count <= 15; count++ ){ %>
+                                <input type="number" name="Holiday<%-count%>" value="0" size="2" maxlength="2" min="0" max="35">
+                                <% } %>
+                        </p>
+
+
+                        <div class="col-day">
+                            <div class="col-day-ss">
+                                <div class="col-day1">
+
+                                    <h5 id="h51">เวรระบบดึก ตั้งค่าจำนวนคนอยู่เวร</h5>
+                                    <p>D : Day : เช้า</p>
+                                    <input type="number" name="Duty1normal" value="2" size="2" maxlength="2" min="0" max="15" id="grenn">
+                                    <input type="number" name="Duty1holiday" value="2" size="2" maxlength="2" min="0" max="15" id="redd">
+                                </div>
+                                <div class="col-day2">
+                                    <p>E : Eve : บ่าย</p>
+                                    <input type="number" name="Duty2normal" value="2" size="2" maxlength="2" min="0" max="15" id="grenn">
+                                    <input type="number" name="Duty2holiday" value="2" size="2" maxlength="2" min="0" max="15" id="redd">
+                                </div>
+                                <div class="col-day3">
+                                    <p>N : Night : ดึก</p>
+                                    <input type="number" name="Duty3normal" value="2" size="2" maxlength="2" min="0" max="15" id="grenn">
+                                    <input type="number" name="Duty3holiday" value="2" size="2" maxlength="2" min="0" max="15" id="redd">
+                                </div>
+
+                            </div>
+                            <div class="inforr">
+                                <p><span class="gr"> </span> จำนวนคนอยู่เวร วันธรรมดา</p>
+                                <p><span class="re"> </span> จำนวนคนอยู่เวร วันหยุด </p>
+                            </div>
+                            <div class="col-input">
+                                <h5>จำนวนพยาบาลด้านล่างนี้ โปรแกรมจะไม่จัดเวรเพิ่มให้จากที่ขอ </h5> <br>
+                                <p><input type="number" name="NurseHead" value="0" size="2" maxlength="2" min="0" max="8"> ใส่จำนวนพยาบาลที่ต้องการให้ลอยเช้า</p>
+                                <br>
+                                <p><input type="number" name="NursePartTime" value="0" size="2" maxlength="2" min="0" max="8"> ใส่จำนวนพยาบาลที่มาพาร์ทไทม์</p>
+                                <br>
+                                <p><input type="submit" value="คลิกเพื่อปรับแต่งค่า" name="trig"></p>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+</body>
+
+</html>

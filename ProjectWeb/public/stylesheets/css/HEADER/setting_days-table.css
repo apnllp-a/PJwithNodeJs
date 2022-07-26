@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+.container {
+    padding-top: 90px;
+    max-height: 100%;
+}
+
+header {
+    margin: 0 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infotable {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.selectinfo {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.setting-table {
+    text-align: left;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    border: 3px solid #A6313F;
+    padding: 50px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: #A6313F;
+    border-radius: 15px;
+}
+
+section {
+    margin: 0px auto;
+    position: absolute;
+    max-width: 100%;
+}
+
+table {
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table>thead th {
+    background-color: #A6313F;
+    padding: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+table>tfoot th {
+    background-color: #A6313F;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+}
+
+th,
+tr,
+td {
+    padding: 2.5px;
+    border-bottom: 1px solid #ddd;
+}
+
+td,
+input,
+select {
+    text-align: center;
+    font-size: 18px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+tr:hover {
+    background-color: #dfbbbf;
+}
+
+span.den-scc {
+    border: 1px solid gray;
+}
+
+.respon {
+    overflow-x: auto;
+}
+
+
+/*table-small*/
+
+#h51 {
+    font-size: 20px;
+}
+
+.col-day {
+    font-size: 18px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.col-input {
+    text-align: left;
+}
+
+.setting-table {
+    padding: 15px;
+    border-radius: 15px;
+    border: 3px solid #A6313F;
+}
+
+.inforr {
+    text-align: left;
+}
+
+#grenn {
+    background-color: #65e265;
+    outline: none;
+}
+
+#redd {
+    background-color: #f5a7a7;
+    outline: none;
+}
+
+.gr {
+    width: 5px;
+    height: 5px;
+    padding: 5px;
+    background-color: #65e265;
+}
+
+.re {
+    width: 5px;
+    height: 0px;
+    padding: 5px;
+    background-color: #f5a7a7;
+}

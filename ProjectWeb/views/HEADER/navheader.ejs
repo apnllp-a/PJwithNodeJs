@@ -13,7 +13,7 @@
 <body>
     <div class="topnav ">
         <div class="logo ">
-            <a href="# ">HEADER</a>
+            <a href="# " onclick="myFunction()">HEADER</a>
         </div>
         <nav>
             <div class="containerdrop ">
@@ -30,13 +30,20 @@
             </div>
         </nav>
     </div>
-    <div class="sidenav">
+    <div class="sidenav" id="myDIV">
         <a href="/table_listname-header">รายชื่อพนักงาน</a>
         <a href="# ">เวรการทำงานของแผนก</a>
-        <a href="#">กำหนดประเภทเวรการทำงาน</a>
+        <a href="/setting_days-table">กำหนดประเภทเวรการทำงาน</a>
         <a href="/table_documents-confirm">อนุมัติเอกสาร</a>
         <a href="/table_documents">เอกสารทั้งหมด</a>
     </div>
+
+    <script>
+        function myFunction() {
+            var element = document.getElementById("myDIV");
+            element.classList.toggle("hidee");
+        }
+    </script>
 </body>
 
 </html>
